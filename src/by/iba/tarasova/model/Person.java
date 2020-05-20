@@ -1,4 +1,4 @@
-package by.iba.tarasova.list;
+package by.iba.tarasova.model;
 
 public class Person {
     private String name;

@@ -13,10 +13,9 @@ public class LoginRequiredFilter implements Filter {
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
             throws ServletException, IOException {
         HttpServletRequest request = (HttpServletRequest) req;
-        if ("admin".equals(request.getSession().getAttribute("name"))) {
+        if (request.getSession().getAttribute("username") != null) {
             chain.doFilter(req, resp);
         } else {
-            request.getSession().invalidate();
             request.getRequestDispatcher("LoginServlet").forward(req, resp);
         }
     }

@@ -1,5 +1,7 @@
 package by.iba.tarasova.list;
 
+import by.iba.tarasova.model.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 

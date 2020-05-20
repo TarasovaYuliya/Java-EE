@@ -15,9 +15,15 @@
 <p><font color="red">${errorMessage}</font></p>
 
 <form action="LoginServlet" method="POST">
-    <p> Name : <input name="name" type="text"/></p>
+    <p> Name : <input name="loginName" type="text"/></p>
     <p> Password : <input name="password" type="password"/></p>
     <input type="submit"/>
 </form>
+
+<div>
+    <form action="RegisterServlet" method="GET">
+        <input class="button-main-page" type="submit" value="Регистрация"/>
+    </form>
+</div>
 </body>
 </html>
